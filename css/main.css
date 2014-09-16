@@ -1,0 +1,364 @@
+/*****************************
+GENERAL
+******************************/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+#wrapper {
+  margin: 0 auto;
+}
+
+.page {
+  padding: 13% 10%;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #4f2115;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #823722;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 0 0 7%;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+p.center {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  border: solid;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: #4f2115;
+}
+
+.button a {
+  display: inherit;
+  color: inherit;
+  font-size: 1.2em;
+  padding: 15px 30px; 
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.circle {
+  border-radius: 100%;
+}
+
+
+/*****************************
+CLEARFIX FOR FLOATS
+******************************/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+/*****************************
+HEADER
+******************************/
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+.main-logo {
+  display: inline-block;
+  padding: 1.75em 0.75em;
+  margin-left: 1%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Bree Serif', Georgia, serif;
+  font-size: 20px;
+  background-color: #1d2623;
+  color: white;
+  float: left;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.main-logo.past-main {
+  padding: 0.5em 0.75em;
+}
+
+.uparrow {
+  opacity: 0.35;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #000;
+  z-index: 999;
+  display: none;
+}
+
+span.uparrow {
+  color: #fff;
+  padding: 3px;
+}
+ 
+.uparrow:hover{
+  opacity: 0.6;
+}
+
+
+/*****************************
+NAVIGATION
+******************************/
+
+.bar {
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.appear {
+  background-color: rgba(136,181,167,0.95);
+  color: #333;
+}
+
+.main-nav {
+  display: none;
+  line-height: 48px;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 1%;
+  float: right;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 0 13px;
+  text-transform: uppercase;
+}
+
+.main-nav li a {
+  font-weight: normal;
+  color: inherit;
+}
+
+.main-nav li a:hover {
+  color: #f0d3ba;
+}
+
+.menu-btn {
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 3px;
+  z-index: 99;
+}
+
+.menu-btn span {
+  display: inline-block;
+  font-size: 0.625em;
+  padding: 5px;
+}
+ 
+.responsive-menu {
+  display: none;
+  position: absolute;
+  top: 48px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 80;
+  background-color: rgba(136,181,167,0.95);
+}
+
+.responsive-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.responsive-menu li {
+  font-size: 1.125em;
+  color: #000;
+  border-bottom: 1px solid #222;
+}
+
+.responsive-menu li:last-child {
+  border-bottom: 0px;
+}
+
+.responsive-menu li a {
+  padding: 15px 0;
+  display: block;
+}
+
+
+/*****************************
+SECTION: HOME
+******************************/
+
+#home {
+  background: #333 url('../images/nighthawks_1280px.jpg') scroll;
+  background-size: cover;
+  padding: 25% 5%;
+  width: 90%;
+}
+
+h1 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 23% 0 2% 0;
+  color: #222;
+  background-color: #fff;
+}
+
+.tagline {
+  font-family: 'Bree Serif', Georgia, serif;
+  font-size: 2.125em;
+  color: #fff;
+}
+
+
+/*****************************
+SECTION: ABOUT
+******************************/
+
+#about {
+  background-color: #f0d3ba;
+}
+
+#about p:first-of-type {
+  font-size: 1.25em;
+  margin-top: 5%;
+}
+
+
+/*****************************
+SECTION: EVENTS
+******************************/
+
+#events {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+}
+
+
+/*****************************
+SECTION: GET INVOLVED
+******************************/
+
+#involve {
+  background-color: #ba7a6c;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+
+/*****************************
+SECTION: CONNECT
+******************************/
+
+#connect {
+  clear: both;
+  background: #333 url('../images/umbrellas.jpg') scroll;
+  background-size: cover;
+  color: #fff;
+}
+
+#connect p {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+#connect p:first-of-type {
+  margin: 5% 0 2.5% 0;
+}
+
+#connect .button {
+  display: block;
+  width: 203px;
+  margin: 0 auto;
+}
+
+#connect a {
+  color: inherit;
+}
+
+.icon-holder {
+  display: table;
+  margin: 0 auto;
+}
+
+.icon-holder span:first-child {
+  margin-right: 1.25em;
+}
+
+.icon-holder span:hover {
+  color: rgba(136,181,167,0.8);
+}
+
+
+/*****************************
+FOOTER
+******************************/
+
+footer {
+  padding: 1% 5%;
+}
+
+footer p {
+  font-size: 0.9em;
+}
